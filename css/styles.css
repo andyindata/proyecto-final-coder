@@ -40,7 +40,6 @@ nav ul li a {
     color: #ffd966;
 }
 
-
 /*Estilos Barra de Navegación Flexbox*/
 .navbar {
     display: flex;
@@ -245,7 +244,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    
 }
 
 .index-section1-2 h3 {
@@ -273,7 +271,6 @@ body {
 .index-section2-1 article div {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 /*Estilos nosotros Flexbox*/
@@ -388,3 +385,69 @@ form input {
     display: flex;
     flex-direction: column;
 }
+
+/*Estilos Diseño Responsive*/
+/*Estilos Tablet*/
+@media (max-width: 1024px){
+    /*Barra de Navegación*/
+    header {
+        padding: 20px 80px;
+    }
+    .navbar {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .navbar1 {
+        grid-column: 1/5 ;
+        grid-row: 2/3;
+    }
+    .navbar2 {
+        grid-column: 1/7 ;
+        grid-row: 1/2;   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .boton-reserva {
+        grid-column: 5/7 ;
+        grid-row: 2/3;  
+    }
+    .boton-reserva-li {
+        display: flex;
+        width: 100%;
+    }
+    /*Estilos Box Modeling*/
+    .pad-default {
+        padding: 20px;
+    }
+
+    .mar-default {
+        margin: 20px;
+    }
+    /*Estilos index*/
+    .ingredientes article {
+        width: 320px;
+    }
+    .index-section1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .ingredientes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .index-section2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .index-section2 div iframe {
+        width: 700px;
+    }
+
+}
+
+
+
