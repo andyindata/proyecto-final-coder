@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "built-css":"node-sass --include-path scss ./SASS/styles.scss ./CSS/styles.css",
+    "watch-css":"nodemon -e scss -x \"npm run built-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,724 @@
+/*Importar Fuente Roboto de Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Reset HTML*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos Barra de Navegación*/
+header {
+    border-bottom: solid 3px #98AD8F;
+    padding: 25px 100px;
+}
+
+header div h1 {
+    color: #06261A;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.boton-reserva div li {
+    background-color: #98AD8F;
+    padding: 9px;
+    border-radius: 20px;
+}
+
+.ubicacion-navegacion {
+    color: #ffd966;
+}
+
+/*Estilos Barra de Navegación Flexbox*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.navbar1-li {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.boton-reserva {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.boton-reserva-li {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.navbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Estilos Pie de Página*/
+footer {
+    background-color: #06261A;
+    color: white;
+    font-size: 20px;
+    padding: 30px 100px;
+}
+
+footer h5 {
+    padding-bottom: 10px;
+    line-height: 2;
+}
+
+footer div ul {
+    list-style: none;
+}
+
+footer div ul li {
+    margin-right: 10px;
+}
+
+/*Estilos Pie de Página Flexbox*/
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div ul {
+    display: flex;
+}
+
+/*Estilos Generales del Body*/
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.color-body-verde {
+    background-color: #EFFAE0;
+}
+
+.color-body-blanco {
+    background-color: #F9F9F9;
+}
+
+/*Estilos Color de Fondo*/
+.fondo-amarillo {
+    background-color: #ffd966;
+}
+
+.fondo-blaco {
+    background-color: #F9F9F9;
+}
+
+.fondo-rosa {
+    background-color: #FADFDF;
+}
+
+.fondo-verde-medio {
+    background-color: #98AD8F;
+}
+
+.fondo-azul {
+    background-color: #B9E1FF;
+}
+
+/*Estilos Títulos*/
+.h2-titulo-verde {
+    color: #06261A;
+    font-size: 60px;
+}
+
+.h3-titulo-negro {
+    color: black;
+    font-size: 35px;
+}
+
+.h3-titulo-verde {
+    color: #06261A;
+    font-size: 35px;
+}
+
+.h4-titulo-negro {
+    color: black;
+    font-size: 28px;
+}
+
+.h4-titulo-verde {
+    color: #06261A;
+    font-size: 28px;
+}
+
+.h5-titulo-negro {
+    color: black;
+    font-size: 20px;
+}
+
+/*Estilos Párrafos*/
+.estilo-parrafo1 {
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.estilo-parrafo2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/*Estilo Borde*/
+.borde-negro {
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+/*Estilo Alineación*/
+.alineacion-center {
+    text-align: center;
+}
+
+/*Estilos Img*/
+.estilo-img img {
+    width: 100%;
+}
+
+/*Estilos Box Modeling*/
+.pad-default {
+    padding: 30px;
+}
+
+.mar-default {
+    margin: 30px;
+}
+
+/*Estilos index*/
+.clientes-felices {
+    width: 350px;
+}
+
+.ingredientes article {
+    width: 450px;
+}
+
+/*Estilos index Flexbox y Grids*/
+.index-section1 {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "index-section1-1 index-section1-1 index-section1-1 index-section1-2"
+    ;
+}
+
+.index-section1-1 {
+    grid-area: index-section1-1;
+}
+
+.index-section1-2 {
+    grid-area: index-section1-2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.index-section1-2 h3 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.index-section1-2 div {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.ingredientes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-section2-1 article div {
+    display: flex;
+    align-items: center;
+}
+
+/*Estilos nosotros Flexbox*/
+.nosotros-section1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 1450px;
+}
+
+.nosotros-section1-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.nosotros-section1 article {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 100%;
+}
+
+.nosotros-section1-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.nosotros-section1 div {
+    height: 100%;
+    width: 100%;
+}
+
+.nosotros-section1 div img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/*Estilos menu*/
+.h4-titulo-menu section div article h4 {
+    color: #06261A;
+    font-size: 28px;
+}
+
+.estilo-parrafo2-menu section div article p {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.width-menu {
+    width: 60%;
+}
+
+.h5-titulo-negro section div article h5 {
+    color: black;
+    font-size: 20px;
+}
+
+.pad-menu article {
+    padding: 10px 0px;
+}
+
+/*Estilos menu Flexbox*/
+.menu-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-section2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estilos promos*/
+.promos-width {
+    width: 35%;
+}
+
+/*Estilos promos Grids*/
+.promos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.promos-grid img {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.promos-grid h4 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+/*Estilos reserva*/
+form {
+    width: 40%;
+}
+
+form label {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    border: solid 1.5px black;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 5px 0px;
+}
+
+#reservar {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #ffd966;
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    align-self: center;
+}
+
+/*Estilos reserva Flexbox*/
+.reserva-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.reserva-flex form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilos Diseño Responsive*/
+/*Estilos Tablet*/
+@media (max-width: 1024px) {
+
+    /*Estilos Títulos*/
+    .h2-titulo-verde {
+        font-size: 45px;
+    }
+
+    /*Barra de Navegación*/
+    header {
+        padding: 20px 80px;
+    }
+
+    .navbar {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .navbar1 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    .navbar2 {
+        grid-column: 1/7;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boton-reserva {
+        grid-column: 5/7;
+        grid-row: 2/3;
+    }
+
+    .boton-reserva-li {
+        display: flex;
+        width: 100%;
+    }
+
+    /*Estilos Box Modeling*/
+    .pad-default {
+        padding: 20px;
+    }
+
+    .mar-default {
+        margin: 20px;
+    }
+
+    /*Estilos index*/
+    .ingredientes article {
+        width: 320px;
+    }
+
+    .index-section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ingredientes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .index-section2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .index-section2 div iframe {
+        width: 700px;
+    }
+
+    /*Estilos nosotros*/
+    .nosotros-section1 {
+        height: 1700px;
+    }
+
+    /*Estilos menu*/
+    .width-menu {
+        width: 92%;
+    }
+
+    .menu-section2 {
+        flex-wrap: wrap;
+    }
+
+    /*Estilos promos*/
+    .promos-width {
+        width: 60%;
+    }
+
+    .promos-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*Estilos reserva*/
+    form {
+        width: 70%;
+    }
+}
+
+/*Estilos Mobile*/
+@media (max-width: 428px) {
+
+    /*Estilos Títulos*/
+    .h2-titulo-verde {
+        font-size: 26px;
+    }
+
+    .h3-titulo-negro {
+        font-size: 20px;
+    }
+
+    .h3-titulo-verde {
+        font-size: 20px;
+    }
+
+    .h4-titulo-negro {
+        font-size: 16px;
+    }
+
+    .h4-titulo-verde {
+        font-size: 16px;
+    }
+
+    .h5-titulo-negro {
+        font-size: 12px;
+    }
+
+    /*Estilos Párrafos*/
+    .estilo-parrafo1 {
+        font-size: 16px;
+    }
+
+    .estilo-parrafo2 {
+        color: black;
+        font-size: 14px;
+    }
+
+    /*Estilo Borde*/
+    .borde-negro {
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+
+    /*Estilos Box Modeling*/
+    .pad-default {
+        padding: 10px;
+    }
+
+    .mar-default {
+        margin: 10px;
+    }
+
+    /*Barra de Navegación*/
+    header {
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .navbar1 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    .navbar1-li {
+        width: 100%;
+    }
+
+    .navbar2 {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    .boton-reserva {
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+
+    .boton-reserva-li {
+        justify-content: center;
+    }
+
+    /*Estilos index*/
+    .clientes-felices {
+        width: 200px;
+    }
+
+    .ingredientes article {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .ingredientes article img {
+        width: 30%;
+        object-fit: contain;
+    }
+
+    .ingredientes article div {
+        width: 70%;
+    }
+
+    .index-section2 div iframe {
+        width: 310px;
+    }
+
+    /*Estilos Pie de Página*/
+    footer {
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+
+    footer div h5 {
+        text-align: center;
+    }
+
+    footer div ul li {
+        margin-right: 10px;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Estilos nosotros*/
+    .nosotros-section1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 70% 15%;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+    }
+
+    .nosotros-section1-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .nosotros-section1 article {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    .nosotros-section1-2 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    /*Estilos menu*/
+    .h4-titulo-menu section div article h4 {
+        font-size: 16px;
+    }
+
+    .estilo-parrafo2-menu section div article p {
+        font-size: 14px;
+    }
+
+    .width-menu {
+        width: 82%;
+    }
+
+    .h5-titulo-negro section div article h5 {
+        font-size: 12px;
+    }
+
+    .pad-menu article {
+        padding: 5px 0px;
+    }
+
+    /*Estilos promos*/
+    .promos-width {
+        width: 70%;
+    }
+
+    /*Estilos reserva*/
+    form {
+        width: 90%;
+    }
+    form label {
+        font-size: 16px;
+    }
+    
+    form input {
+        font-size: 12px;
+    }
+    
+    #reservar {
+        font-size: 18px;
+    }
+}
