@@ -33,20 +33,28 @@ body {
   color: #06261A;
   font-size: 28px; }
 
+.h4-titulo-menu section div article h4 {
+  color: #06261A;
+  font-size: 28px; }
+
 .h5-titulo-negro {
   color: black;
   font-size: 20px; }
 
-/*Estilos Párrafos*/
-.estilo-parrafo1 {
+.h5-titulo-negro section div article h5 {
   color: black;
-  font-size: 25px;
+  font-size: 20px; }
+
+/*Estilos Párrafos*/
+p {
+  color: black;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.5; }
 
-.estilo-parrafo2 {
+li {
   color: black;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.5; }
 
@@ -140,16 +148,20 @@ footer {
 .alineacion-center {
   text-align: center; }
 
-/*Estilos Img*/
-.estilo-img img {
-  width: 100%; }
-
 /*Estilos Box Modeling*/
 .pad-default {
   padding: 30px; }
 
 .mar-default {
   margin: 30px; }
+
+img {
+  object-fit: cover;
+  width: 100%; }
+
+.icon {
+  object-fit: none;
+  width: auto; }
 
 .index-section1 {
   display: grid;
@@ -191,6 +203,96 @@ footer {
   display: flex;
   align-items: center; }
 
+.nosotros-section1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 1450px; }
+  .nosotros-section1 div {
+    height: 100%;
+    width: 100%; }
+    .nosotros-section1 div img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
+  .nosotros-section1 article {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 100%; }
+
+.nosotros-section1-1 {
+  grid-column: 1/2;
+  grid-row: 1/2; }
+
+.nosotros-section1-2 {
+  grid-column: 1/2;
+  grid-row: 2/3; }
+
+.width-menu {
+  width: 70%; }
+
+.pad-menu article {
+  padding: 10px 0px; }
+
+.menu-section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.menu-section2 {
+  display: flex;
+  justify-content: space-between; }
+
+.promos-width {
+  width: 45%; }
+
+.promos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-items: center;
+  align-items: center; }
+  .promos-grid img {
+    grid-column: 1/3;
+    grid-row: 1/2; }
+  .promos-grid h4 {
+    grid-column: 1/3;
+    grid-row: 1/2; }
+
+form {
+  width: 50%; }
+  form label {
+    color: black;
+    font-size: 25px;
+    font-weight: bold; }
+  form input {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    border: solid 1.5px black;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 5px 0px; }
+
+#reservar {
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #ffd966;
+  width: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  align-self: center; }
+
+.reserva-flex {
+  display: flex;
+  justify-content: center; }
+  .reserva-flex form {
+    display: flex;
+    flex-direction: column; }
+
 /*Components*/
 /*Media Queries*/
 @media (max-width: 1024px) {
@@ -225,7 +327,7 @@ footer {
     .boton-reserva div li {
       display: flex;
       width: 100%; }
-  /*Index*/
+  /*index*/
   .index-section1 {
     display: flex;
     flex-direction: column; }
@@ -239,7 +341,22 @@ footer {
     justify-content: center;
     align-items: center; }
     .index-section2 div iframe {
-      width: 700px; } }
+      width: 700px; }
+  /*nosotros*/
+  .nosotros-section1 {
+    height: 1700px; }
+  /*menu*/
+  .width-menu {
+    width: 85%; }
+  .menu-section2 {
+    flex-wrap: wrap;
+    justify-content: center; }
+  /*promos*/
+  .promos-width {
+    width: 60%; }
+  /*reserva*/
+  form {
+    width: 70%; } }
 
 @media (max-width: 428px) {
   /*Títulos*/
@@ -253,14 +370,19 @@ footer {
     font-size: 16px; }
   .h4-titulo-verde {
     font-size: 16px; }
+  .h4-titulo-menu section div article h4 {
+    font-size: 18px; }
   .h5-titulo-negro {
     font-size: 12px; }
+  .h5-titulo-negro section div article h5 {
+    font-size: 12px; }
   /*Párrafos*/
-  .estilo-parrafo1 {
-    font-size: 16px; }
-  .estilo-parrafo2 {
+  p {
     color: black;
-    font-size: 14px; }
+    font-size: 15px; }
+  li {
+    color: black;
+    font-size: 15px; }
   /*Borde*/
   .borde-negro {
     border: solid 2px black;
@@ -297,7 +419,7 @@ footer {
       justify-content: center; }
       footer div h5 {
         text-align: center; }
-  /*Index*/
+  /*index*/
   .index-section1-2 {
     width: 200px; }
   .ingredientes article {
@@ -310,4 +432,36 @@ footer {
     .ingredientes article div {
       width: 70%; }
   .index-section2 div iframe {
-    width: 310px; } }
+    width: 310px; }
+  /*nosotros*/
+  .nosotros-section1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 70% 15%;
+    justify-content: center;
+    align-items: center;
+    height: 1000px; }
+    .nosotros-section1 article {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      width: 100%; }
+  .nosotros-section1-1 {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .nosotros-section1-2 {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  /*menu*/
+  .pad-menu article {
+    padding: 5px 0px; }
+  /*promos*/
+  .promos-width {
+    width: 75%; }
+  /*reserva*/
+  form {
+    width: 90%; }
+    form label {
+      font-size: 16px; }
+    form input {
+      font-size: 12px; }
+  #reservar {
+    font-size: 18px; } }

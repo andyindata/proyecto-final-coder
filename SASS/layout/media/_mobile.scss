@@ -21,18 +21,27 @@
         font-size: 16px;
     }
 
+    .h4-titulo-menu section div article h4 {
+        font-size: 18px;
+    }
+
     .h5-titulo-negro {
         font-size: 12px;
     }
 
-    /*Párrafos*/
-    .estilo-parrafo1 {
-        font-size: 16px;
+    .h5-titulo-negro section div article h5 {
+        font-size: 12px;
     }
 
-    .estilo-parrafo2 {
+    /*Párrafos*/
+    p {
         color: black;
-        font-size: 14px;
+        font-size: 15px;
+    }
+
+    li {
+        color: black;
+        font-size: 15px;
     }
 
     /*Borde*/
@@ -97,7 +106,7 @@
         }
     }
 
-    /*Index*/
+    /*index*/
     .index-section1-2 {
         width: 200px;
     }
@@ -126,5 +135,51 @@
             }
         }
     }
+        /*nosotros*/
+        .nosotros-section1 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 15% 70% 15%;
+            justify-content: center;
+            align-items: center;
+            height: 1000px;
+            article {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                width: 100%;
+            }
+        }
+        .nosotros-section1-1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+    
+        .nosotros-section1-2 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+    
+        /*menu*/
+        .pad-menu {
+            article {
+                padding: 5px 0px;
+            }
+        }
 
+        /*promos*/
+        .promos-width {
+            width: 75%;
+        }
+        /*reserva*/
+        form {
+            width: 90%;
+            label {
+                font-size: 16px;
+            }
+            input {
+                font-size: 12px;
+            }
+        }
+        #reservar {
+            font-size: 18px;
+        }
 }

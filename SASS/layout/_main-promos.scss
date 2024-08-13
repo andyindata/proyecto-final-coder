@@ -1,0 +1,19 @@
+.promos-width {
+    width: 45%;
+}
+
+.promos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    img {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    h4 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}
