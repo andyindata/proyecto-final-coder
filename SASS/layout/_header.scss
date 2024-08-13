@@ -15,6 +15,13 @@ header {
                         color: black;
                         font-weight: bold;
                         font-size: 20px;
+                        &:hover {
+                            color: #ffd966;
+                        }
+                    }
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: transform 1s linear;
                     }
                 }
                 h1 {
