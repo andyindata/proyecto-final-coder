@@ -1,0 +1,21 @@
+footer {
+    background-color: #06261A;
+    color: white;
+    font-size: 20px;
+    padding: 30px 80px;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h5 {
+            line-height: 2;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                margin-right: 10px;
+            }
+        }
+    }
+}

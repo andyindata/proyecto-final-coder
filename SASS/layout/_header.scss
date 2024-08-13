@@ -1,0 +1,58 @@
+header {
+    border-bottom: solid 3px #98AD8F;
+    padding: 25px 80px;
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                display: flex;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+                h1 {
+                    color: #06261A;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+.ubicacion-navegacion {
+    color: #ffd966;
+}
+
+.navbar1 {
+    justify-content: space-between;
+    flex: 1;
+    div {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+
+.navbar2 {
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-reserva {
+    justify-content: flex-end;
+    flex: 1;
+    div {
+        li {
+            background-color: #98AD8F;
+            padding: 9px;
+            border-radius: 20px;
+        }
+    }
+}

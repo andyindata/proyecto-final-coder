@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Utilities*/
 /*Base*/
 /*Importar Fuente Roboto de Google Fonts*/
@@ -8,6 +9,143 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: "Roboto", sans-serif; }
+
+.color-body-verde {
+  background-color: #EFFAE0; }
+
+.color-body-blanco {
+  background-color: #F9F9F9; }
+
+.fondo-amarillo {
+  background-color: #ffd966; }
+
+.fondo-blaco {
+  background-color: #F9F9F9; }
+
+.fondo-rosa {
+  background-color: #FADFDF; }
+
+.fondo-verde-medio {
+  background-color: #98AD8F; }
+
+.fondo-azul {
+  background-color: #B9E1FF; }
+
 /*Layout*/
+header {
+  border-bottom: solid 3px #98AD8F;
+  padding: 25px 80px; }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header nav ul div {
+      display: flex; }
+      header nav ul div li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px; }
+      header nav ul div h1 {
+        color: #06261A;
+        font-size: 40px; }
+
+.ubicacion-navegacion {
+  color: #ffd966; }
+
+.navbar1 {
+  justify-content: space-between;
+  flex: 1; }
+  .navbar1 div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; }
+
+.navbar2 {
+  align-items: center;
+  justify-content: center; }
+
+.boton-reserva {
+  justify-content: flex-end;
+  flex: 1; }
+  .boton-reserva div li {
+    background-color: #98AD8F;
+    padding: 9px;
+    border-radius: 20px; }
+
+footer {
+  background-color: #06261A;
+  color: white;
+  font-size: 20px;
+  padding: 30px 80px; }
+  footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer div h5 {
+      line-height: 2; }
+    footer div ul {
+      list-style: none;
+      display: flex; }
+      footer div ul li {
+        margin-right: 10px; }
+
 /*Components*/
 /*Media Queries*/
+@media (max-width: 1024px) {
+  /*Barra de Navegación*/
+  header {
+    padding: 15px 40px; }
+    header nav ul {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr); }
+  .navbar1 {
+    grid-column: 1/5;
+    grid-row: 2/3; }
+  .navbar2 {
+    grid-column: 1/7;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .boton-reserva {
+    grid-column: 5/7;
+    grid-row: 2/3; }
+    .boton-reserva div li {
+      display: flex;
+      width: 100%; } }
+
+@media (max-width: 428px) {
+  /*Barra de Navegación*/
+  header {
+    padding: 10px 20px; }
+    header nav ul {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr); }
+  .navbar1 {
+    grid-column: 1/5;
+    grid-row: 2/3; }
+    .navbar1 div {
+      width: 100%; }
+  .navbar2 {
+    grid-column: 1/5;
+    grid-row: 1/2; }
+  .boton-reserva {
+    grid-column: 1/5;
+    grid-row: 3/4; }
+    .boton-reserva div {
+      justify-content: center; }
+  /*Pie de Página*/
+  footer {
+    font-size: 16px;
+    padding: 15px 40px; }
+    footer div {
+      flex-direction: column;
+      justify-content: center; }
+      footer div h5 {
+        text-align: center; } }

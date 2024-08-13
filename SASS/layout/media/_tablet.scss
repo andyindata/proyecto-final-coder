@@ -1,0 +1,37 @@
+@media (max-width: 1024px) {
+    /*Barra de Navegación*/
+    header {
+        padding: 15px 40px;
+        nav {
+            ul {
+                display: grid;
+                width: 100%;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+    }
+    .navbar1 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    .navbar2 {
+        grid-column: 1/7;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boton-reserva {
+        grid-column: 5/7;
+        grid-row: 2/3;
+        div {
+            li {
+                display: flex;
+                width: 100%;  
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@media (max-width: 428px) {
+    /*Barra de Navegación*/
+    header {
+        padding: 10px 20px;
+
+        nav {
+            ul {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+    }
+
+    .navbar1 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .navbar2 {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    .boton-reserva {
+        grid-column: 1/5;
+        grid-row: 3/4;
+
+        div {
+            justify-content: center;
+        }
+    }
+    /*Pie de Página*/
+    footer {
+        font-size: 16px;
+        padding: 15px 40px;
+        div {
+            flex-direction: column;
+            justify-content: center;
+            h5 {
+                text-align: center;
+            }
+        }
+    }
+}
