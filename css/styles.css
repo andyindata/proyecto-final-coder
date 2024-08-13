@@ -12,6 +12,44 @@
 body {
   font-family: "Roboto", sans-serif; }
 
+/*Estilos Títulos*/
+.h2-titulo-verde {
+  color: #06261A;
+  font-size: 60px; }
+
+.h3-titulo-negro {
+  color: black;
+  font-size: 35px; }
+
+.h3-titulo-verde {
+  color: #06261A;
+  font-size: 35px; }
+
+.h4-titulo-negro {
+  color: black;
+  font-size: 28px; }
+
+.h4-titulo-verde {
+  color: #06261A;
+  font-size: 28px; }
+
+.h5-titulo-negro {
+  color: black;
+  font-size: 20px; }
+
+/*Estilos Párrafos*/
+.estilo-parrafo1 {
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.estilo-parrafo2 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5; }
+
 .color-body-verde {
   background-color: #EFFAE0; }
 
@@ -93,9 +131,77 @@ footer {
       footer div ul li {
         margin-right: 10px; }
 
+/*Estilo Borde*/
+.borde-negro {
+  border: solid 3px black;
+  border-radius: 10px; }
+
+/*Estilo Alineación*/
+.alineacion-center {
+  text-align: center; }
+
+/*Estilos Img*/
+.estilo-img img {
+  width: 100%; }
+
+/*Estilos Box Modeling*/
+.pad-default {
+  padding: 30px; }
+
+.mar-default {
+  margin: 30px; }
+
+.index-section1 {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "index-section1-1 index-section1-1 index-section1-1 index-section1-2"; }
+
+.index-section1-1 {
+  grid-area: index-section1-1; }
+
+.index-section1-2 {
+  grid-area: index-section1-2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  width: 350px; }
+  .index-section1-2 div {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end; }
+  .index-section1-2 h3 {
+    grid-column: 1/3;
+    grid-row: 1/2; }
+
+.ingredientes {
+  display: flex;
+  justify-content: space-between; }
+  .ingredientes article {
+    width: 450px; }
+
+.index-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.index-section2-1 article div {
+  display: flex;
+  align-items: center; }
+
 /*Components*/
 /*Media Queries*/
 @media (max-width: 1024px) {
+  /*Títulos*/
+  .h2-titulo-verde {
+    font-size: 45px; }
+  /*Box Modeling*/
+  .pad-default {
+    padding: 20px; }
+  .mar-default {
+    margin: 20px; }
   /*Barra de Navegación*/
   header {
     padding: 15px 40px; }
@@ -118,9 +224,52 @@ footer {
     grid-row: 2/3; }
     .boton-reserva div li {
       display: flex;
-      width: 100%; } }
+      width: 100%; }
+  /*Index*/
+  .index-section1 {
+    display: flex;
+    flex-direction: column; }
+  .ingredientes {
+    flex-wrap: wrap;
+    justify-content: center; }
+    .ingredientes article {
+      width: 320px; }
+  .index-section2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .index-section2 div iframe {
+      width: 700px; } }
 
 @media (max-width: 428px) {
+  /*Títulos*/
+  .h2-titulo-verde {
+    font-size: 26px; }
+  .h3-titulo-negro {
+    font-size: 20px; }
+  .h3-titulo-verde {
+    font-size: 20px; }
+  .h4-titulo-negro {
+    font-size: 16px; }
+  .h4-titulo-verde {
+    font-size: 16px; }
+  .h5-titulo-negro {
+    font-size: 12px; }
+  /*Párrafos*/
+  .estilo-parrafo1 {
+    font-size: 16px; }
+  .estilo-parrafo2 {
+    color: black;
+    font-size: 14px; }
+  /*Borde*/
+  .borde-negro {
+    border: solid 2px black;
+    border-radius: 10px; }
+  /*Box Modeling*/
+  .pad-default {
+    padding: 10px; }
+  .mar-default {
+    margin: 10px; }
   /*Barra de Navegación*/
   header {
     padding: 10px 20px; }
@@ -137,9 +286,8 @@ footer {
     grid-row: 1/2; }
   .boton-reserva {
     grid-column: 1/5;
-    grid-row: 3/4; }
-    .boton-reserva div {
-      justify-content: center; }
+    grid-row: 3/4;
+    justify-content: center; }
   /*Pie de Página*/
   footer {
     font-size: 16px;
@@ -148,4 +296,18 @@ footer {
       flex-direction: column;
       justify-content: center; }
       footer div h5 {
-        text-align: center; } }
+        text-align: center; }
+  /*Index*/
+  .index-section1-2 {
+    width: 200px; }
+  .ingredientes article {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    .ingredientes article img {
+      width: 30%;
+      object-fit: contain; }
+    .ingredientes article div {
+      width: 70%; }
+  .index-section2 div iframe {
+    width: 310px; } }

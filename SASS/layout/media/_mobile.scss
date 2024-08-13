@@ -1,4 +1,55 @@
 @media (max-width: 428px) {
+
+    /*Títulos*/
+    .h2-titulo-verde {
+        font-size: 26px;
+    }
+
+    .h3-titulo-negro {
+        font-size: 20px;
+    }
+
+    .h3-titulo-verde {
+        font-size: 20px;
+    }
+
+    .h4-titulo-negro {
+        font-size: 16px;
+    }
+
+    .h4-titulo-verde {
+        font-size: 16px;
+    }
+
+    .h5-titulo-negro {
+        font-size: 12px;
+    }
+
+    /*Párrafos*/
+    .estilo-parrafo1 {
+        font-size: 16px;
+    }
+
+    .estilo-parrafo2 {
+        color: black;
+        font-size: 14px;
+    }
+
+    /*Borde*/
+    .borde-negro {
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+
+    /*Box Modeling*/
+    .pad-default {
+        padding: 10px;
+    }
+
+    .mar-default {
+        margin: 10px;
+    }
+
     /*Barra de Navegación*/
     header {
         padding: 10px 20px;
@@ -28,21 +79,52 @@
     .boton-reserva {
         grid-column: 1/5;
         grid-row: 3/4;
-
-        div {
-            justify-content: center;
-        }
+        justify-content: center;
     }
+
     /*Pie de Página*/
     footer {
         font-size: 16px;
         padding: 15px 40px;
+
         div {
             flex-direction: column;
             justify-content: center;
+
             h5 {
                 text-align: center;
             }
         }
     }
+
+    /*Index*/
+    .index-section1-2 {
+        width: 200px;
+    }
+
+    .ingredientes {
+        article {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 30%;
+                object-fit: contain;
+            }
+
+            div {
+                width: 70%;
+            }
+        }
+    }
+
+    .index-section2 {
+        div {
+            iframe {
+                width: 310px;
+            }
+        }
+    }
+
 }
