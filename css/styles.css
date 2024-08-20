@@ -15,33 +15,33 @@ body {
 /*Estilos Títulos*/
 .h2-titulo-verde {
   color: #06261A;
-  font-size: 60px; }
+  font-size: 50px; }
 
 .h3-titulo-negro {
   color: black;
-  font-size: 35px; }
+  font-size: 30px; }
 
 .h3-titulo-verde {
   color: #06261A;
-  font-size: 35px; }
+  font-size: 30px; }
+
+.h3-titulo-verde section div article h3 {
+  color: #06261A;
+  font-size: 30px; }
 
 .h4-titulo-negro {
   color: black;
-  font-size: 28px; }
+  font-size: 25px; }
 
 .h4-titulo-verde {
   color: #06261A;
-  font-size: 28px; }
+  font-size: 25px; }
 
-.h4-titulo-menu section div article h4 {
-  color: #06261A;
-  font-size: 28px; }
+.h4-titulo-negro section div article h4 {
+  color: black;
+  font-size: 25px; }
 
 .h5-titulo-negro {
-  color: black;
-  font-size: 20px; }
-
-.h5-titulo-negro section div article h5 {
   color: black;
   font-size: 20px; }
 
@@ -379,22 +379,20 @@ form {
     font-size: 20px; }
   .h3-titulo-verde {
     font-size: 20px; }
+  .h3-titulo-verde section div article h3 {
+    font-size: 18px; }
   .h4-titulo-negro {
     font-size: 16px; }
   .h4-titulo-verde {
     font-size: 16px; }
-  .h4-titulo-menu section div article h4 {
-    font-size: 18px; }
-  .h5-titulo-negro {
+  .h4-titulo-negro section div article h4 {
     font-size: 12px; }
-  .h5-titulo-negro section div article h5 {
+  .h5-titulo-negro {
     font-size: 12px; }
   /*Párrafos*/
   p {
-    color: black;
     font-size: 15px; }
   li {
-    color: black;
     font-size: 15px; }
   /*Borde*/
   .borde-negro {

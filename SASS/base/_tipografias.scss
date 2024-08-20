@@ -4,56 +4,57 @@ body {
 
 /*Estilos Títulos*/
 .h2-titulo-verde {
-    color: #06261A;
-    font-size: 60px;
+    color: $colorLetrasVerde;
+    font-size: 50px;
 }
 
 .h3-titulo-negro {
-    color: black;
-    font-size: 35px;
+    color: $colorLetrasNegro;
+    font-size: 30px;
 }
 
 .h3-titulo-verde {
-    color: #06261A;
-    font-size: 35px;
+    color: $colorLetrasVerde;
+    font-size: 30px;
+}
+
+.h3-titulo-verde section div article h3 {
+    color: $colorLetrasVerde;
+    font-size: 30px;
 }
 
 .h4-titulo-negro {
-    color: black;
-    font-size: 28px;
+    color: $colorLetrasNegro;
+    font-size: 25px;
 }
 
 .h4-titulo-verde {
-    color: #06261A;
-    font-size: 28px;
+    color: $colorLetrasVerde;
+    font-size: 25px;
 }
 
-.h4-titulo-menu section div article h4 {
-    color: #06261A;
-    font-size: 28px;
+.h4-titulo-negro section div article h4 {
+    color: $colorLetrasNegro;
+    font-size: 25px;
 }
 
 .h5-titulo-negro {
-    color: black;
+    color: $colorLetrasNegro;
     font-size: 20px;
 }
 
-.h5-titulo-negro section div article h5 {
-    color: black;
-    font-size: 20px;
-}
 
 /*Estilos Párrafos*/
 p {
-    color: black;
-    font-size: 22px;
+    color: $colorLetrasNegro;
+    font-size: map-get($map: $fuente-p, $key: desktop);
     font-weight: 400;
     line-height: 1.5;
 }
 
 li {
-    color: black;
-    font-size: 22px;
+    color: $colorLetrasNegro;
+    font-size: map-get($map: $fuente-p, $key: desktop);
     font-weight: 400;
     line-height: 1.5;
 }

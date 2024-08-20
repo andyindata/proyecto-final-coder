@@ -1,22 +1,20 @@
 header {
-    border-bottom: solid 3px #98AD8F;
+    border-bottom: solid 3px $colorFondoVerdeMedio;
     padding: 25px 80px;
     nav {
         ul {
             list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flexSpaceBetweenCenter;
             div {
                 display: flex;
                 li {
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: $colorLetrasNegro;
                         font-weight: bold;
                         font-size: 20px;
                         &:hover {
-                            color: #ffd966;
+                            color: $colorFondoAmarillo;
                         }
                     }
                     &:hover {
@@ -25,7 +23,7 @@ header {
                     }
                 }
                 h1 {
-                    color: #06261A;
+                    color: $colorLetrasVerde;
                     font-size: 40px;
                 }
             }
@@ -34,7 +32,7 @@ header {
 }
 
 .ubicacion-navegacion {
-    color: #ffd966;
+    color: $colorFondoAmarillo;
 }
 
 .navbar1 {
@@ -57,7 +55,7 @@ header {
     flex: 1;
     div {
         li {
-            background-color: #98AD8F;
+            background-color: $colorFondoVerdeMedio;
             padding: 9px;
             border-radius: 20px;
         }

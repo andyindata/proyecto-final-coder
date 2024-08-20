@@ -1,21 +1,21 @@
 form {
     width: 50%;
     label {
-        color: black;
+        color: $colorLetrasNegro;
         font-size: 25px;
         font-weight: bold;
     }
     input {
         width: 100%;
-        color: black;
+        color: $colorLetrasNegro;
         font-size: 15px;
         border: solid 1.5px black;
         border-radius: 10px;
         padding: 5px 5px;
         margin: 5px 0px;
         &:hover {
-            background-color: #B9E1FF;
-            color: #06261A;
+            background-color: $colorFondoAzul;
+            color: $colorLetrasVerde;
         }
     }
 }
@@ -23,7 +23,7 @@ form {
 #reservar {
     font-size: 25px;
     font-weight: bold;
-    background-color: #ffd966;
+    background-color: $colorFondoAmarillo;
     width: auto;
     padding: 10px;
     border: none;

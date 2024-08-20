@@ -13,6 +13,10 @@
         font-size: 20px;
     }
 
+    .h3-titulo-verde section div article h3 {
+        font-size: 18px;
+    }
+
     .h4-titulo-negro {
         font-size: 16px;
     }
@@ -21,27 +25,21 @@
         font-size: 16px;
     }
 
-    .h4-titulo-menu section div article h4 {
-        font-size: 18px;
+    .h4-titulo-negro section div article h4 {
+        font-size: 12px;
     }
 
     .h5-titulo-negro {
         font-size: 12px;
     }
 
-    .h5-titulo-negro section div article h5 {
-        font-size: 12px;
-    }
-
     /*Párrafos*/
     p {
-        color: black;
-        font-size: 15px;
+        font-size: map-get($map: $fuente-p, $key: mobile);
     }
 
     li {
-        color: black;
-        font-size: 15px;
+        font-size: map-get($map: $fuente-p, $key: mobile);
     }
 
     /*Borde*/

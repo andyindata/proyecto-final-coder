@@ -4,9 +4,7 @@ footer {
     font-size: 20px;
     padding: 30px 80px;
     div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexSpaceBetweenCenter;
         h5 {
             line-height: 2;
         }
